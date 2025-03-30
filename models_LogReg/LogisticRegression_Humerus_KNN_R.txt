@@ -1,0 +1,28 @@
+Logistic Regression Model for Humerus (KNN_R)
+
+Binary classification: 0 = Female, 1 = Male
+Samples used: 48
+
+Intercept: -79.481145
+
+Coefficients:
+  Humerus maximum length: 0.087208
+  Humerus epicondylar breadth: 0.226717
+  Humerus vertical diameter of head: 0.836048
+  Humerus maximum diameter at midshaft: -0.013657
+  Humerus minimum diameter at midshaft: 0.137535
+
+Feature Order:
+Humerus maximum length, Humerus epicondylar breadth, Humerus vertical diameter of head, Humerus maximum diameter at midshaft, Humerus minimum diameter at midshaft
+
+Classification Rule:
+Compute the score using your measurements:
+
+  Score = -79.481 + 0.087 × Humerus maximum length + 0.227 × Humerus epicondylar breadth + 0.836 × Humerus vertical diameter of head + -0.014 × Humerus maximum diameter at midshaft + 0.138 × Humerus minimum diameter at midshaft
+
+Then apply the rule:
+  If Score > 0 → Classify as Male
+  If Score ≤ 0 → Classify as Female
+
+Example (replace values with your measurements):
+  Score = -79.481 + (0.087 × [your Humerus maximum length]) + (0.227 × [your Humerus epicondylar breadth]) + (0.836 × [your Humerus vertical diameter of head]) + (-0.014 × [your Humerus maximum diameter at midshaft]) + (0.138 × [your Humerus minimum diameter at midshaft])

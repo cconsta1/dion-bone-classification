@@ -1,0 +1,25 @@
+Logistic Regression Model for Scapula (KNN_R)
+
+Binary classification: 0 = Female, 1 = Male
+Samples used: 48
+
+Intercept: -73.625781
+
+Coefficients:
+  Scapula height: 0.319801
+  Scapula breadth: 0.234261
+
+Feature Order:
+Scapula height, Scapula breadth
+
+Classification Rule:
+Compute the score using your measurements:
+
+  Score = -73.626 + 0.320 × Scapula height + 0.234 × Scapula breadth
+
+Then apply the rule:
+  If Score > 0 → Classify as Male
+  If Score ≤ 0 → Classify as Female
+
+Example (replace values with your measurements):
+  Score = -73.626 + (0.320 × [your Scapula height]) + (0.234 × [your Scapula breadth])

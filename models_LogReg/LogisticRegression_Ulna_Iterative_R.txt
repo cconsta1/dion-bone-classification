@@ -1,0 +1,28 @@
+Logistic Regression Model for Ulna (Iterative_R)
+
+Binary classification: 0 = Female, 1 = Male
+Samples used: 48
+
+Intercept: -52.503291
+
+Coefficients:
+  Ulna maximum length: 0.396323
+  Ulna dorso-volar diameter: 0.114177
+  Ulna transverse diameter: 0.052109
+  Ulna physiological length: -0.251548
+  Ulna minimum circumference: 0.179039
+
+Feature Order:
+Ulna maximum length, Ulna dorso-volar diameter, Ulna transverse diameter, Ulna physiological length, Ulna minimum circumference
+
+Classification Rule:
+Compute the score using your measurements:
+
+  Score = -52.503 + 0.396 × Ulna maximum length + 0.114 × Ulna dorso-volar diameter + 0.052 × Ulna transverse diameter + -0.252 × Ulna physiological length + 0.179 × Ulna minimum circumference
+
+Then apply the rule:
+  If Score > 0 → Classify as Male
+  If Score ≤ 0 → Classify as Female
+
+Example (replace values with your measurements):
+  Score = -52.503 + (0.396 × [your Ulna maximum length]) + (0.114 × [your Ulna dorso-volar diameter]) + (0.052 × [your Ulna transverse diameter]) + (-0.252 × [your Ulna physiological length]) + (0.179 × [your Ulna minimum circumference])

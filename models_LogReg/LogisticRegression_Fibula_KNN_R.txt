@@ -1,0 +1,25 @@
+Logistic Regression Model for Fibula (KNN_R)
+
+Binary classification: 0 = Female, 1 = Male
+Samples used: 48
+
+Intercept: -40.563807
+
+Coefficients:
+  Fibula maximum length: 0.109343
+  Fibula maximum diameter at midshaft: 0.203881
+
+Feature Order:
+Fibula maximum length, Fibula maximum diameter at midshaft
+
+Classification Rule:
+Compute the score using your measurements:
+
+  Score = -40.564 + 0.109 × Fibula maximum length + 0.204 × Fibula maximum diameter at midshaft
+
+Then apply the rule:
+  If Score > 0 → Classify as Male
+  If Score ≤ 0 → Classify as Female
+
+Example (replace values with your measurements):
+  Score = -40.564 + (0.109 × [your Fibula maximum length]) + (0.204 × [your Fibula maximum diameter at midshaft])

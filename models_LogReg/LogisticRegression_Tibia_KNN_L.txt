@@ -1,0 +1,29 @@
+Logistic Regression Model for Tibia (KNN_L)
+
+Binary classification: 0 = Female, 1 = Male
+Samples used: 48
+
+Intercept: -53.558499
+
+Coefficients:
+  Tibia length: -0.030856
+  Tibia maximum proximal epiphyseal breadth: 0.591220
+  Tibia maximum distal epiphyseal breadth: -0.104351
+  Tibia maximum diameter at the nutrient foramen: 0.120654
+  Tibia transverse diameter at the nutrient foramen: -0.098863
+  Tibia circumference at the nutrient foramen: 0.300756
+
+Feature Order:
+Tibia length, Tibia maximum proximal epiphyseal breadth, Tibia maximum distal epiphyseal breadth, Tibia maximum diameter at the nutrient foramen, Tibia transverse diameter at the nutrient foramen, Tibia circumference at the nutrient foramen
+
+Classification Rule:
+Compute the score using your measurements:
+
+  Score = -53.558 + -0.031 × Tibia length + 0.591 × Tibia maximum proximal epiphyseal breadth + -0.104 × Tibia maximum distal epiphyseal breadth + 0.121 × Tibia maximum diameter at the nutrient foramen + -0.099 × Tibia transverse diameter at the nutrient foramen + 0.301 × Tibia circumference at the nutrient foramen
+
+Then apply the rule:
+  If Score > 0 → Classify as Male
+  If Score ≤ 0 → Classify as Female
+
+Example (replace values with your measurements):
+  Score = -53.558 + (-0.031 × [your Tibia length]) + (0.591 × [your Tibia maximum proximal epiphyseal breadth]) + (-0.104 × [your Tibia maximum distal epiphyseal breadth]) + (0.121 × [your Tibia maximum diameter at the nutrient foramen]) + (-0.099 × [your Tibia transverse diameter at the nutrient foramen]) + (0.301 × [your Tibia circumference at the nutrient foramen])

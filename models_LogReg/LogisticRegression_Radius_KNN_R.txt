@@ -1,0 +1,26 @@
+Logistic Regression Model for Radius (KNN_R)
+
+Binary classification: 0 = Female, 1 = Male
+Samples used: 48
+
+Intercept: -63.019707
+
+Coefficients:
+  Radius maximum length: 0.147082
+  Radius sagittal diameter at midshaft: 0.873689
+  Radius transverse diameter at midshaft: 1.265861
+
+Feature Order:
+Radius maximum length, Radius sagittal diameter at midshaft, Radius transverse diameter at midshaft
+
+Classification Rule:
+Compute the score using your measurements:
+
+  Score = -63.020 + 0.147 × Radius maximum length + 0.874 × Radius sagittal diameter at midshaft + 1.266 × Radius transverse diameter at midshaft
+
+Then apply the rule:
+  If Score > 0 → Classify as Male
+  If Score ≤ 0 → Classify as Female
+
+Example (replace values with your measurements):
+  Score = -63.020 + (0.147 × [your Radius maximum length]) + (0.874 × [your Radius sagittal diameter at midshaft]) + (1.266 × [your Radius transverse diameter at midshaft])

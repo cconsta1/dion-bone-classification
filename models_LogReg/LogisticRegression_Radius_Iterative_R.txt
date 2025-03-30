@@ -1,0 +1,26 @@
+Logistic Regression Model for Radius (Iterative_R)
+
+Binary classification: 0 = Female, 1 = Male
+Samples used: 48
+
+Intercept: -63.954709
+
+Coefficients:
+  Radius maximum length: 0.153729
+  Radius sagittal diameter at midshaft: 0.667878
+  Radius transverse diameter at midshaft: 1.480128
+
+Feature Order:
+Radius maximum length, Radius sagittal diameter at midshaft, Radius transverse diameter at midshaft
+
+Classification Rule:
+Compute the score using your measurements:
+
+  Score = -63.955 + 0.154 × Radius maximum length + 0.668 × Radius sagittal diameter at midshaft + 1.480 × Radius transverse diameter at midshaft
+
+Then apply the rule:
+  If Score > 0 → Classify as Male
+  If Score ≤ 0 → Classify as Female
+
+Example (replace values with your measurements):
+  Score = -63.955 + (0.154 × [your Radius maximum length]) + (0.668 × [your Radius sagittal diameter at midshaft]) + (1.480 × [your Radius transverse diameter at midshaft])

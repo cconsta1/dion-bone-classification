@@ -1,0 +1,32 @@
+Logistic Regression Model for Femur (KNN_R)
+
+Binary classification: 0 = Female, 1 = Male
+Samples used: 48
+
+Intercept: -158.889974
+
+Coefficients:
+  Femur maximum heigth: -0.450153
+  Femur bicondylar length: 0.503604
+  Femur epicondylar breadth: 0.185365
+  Femur maximum head diameter: 1.167166
+  Femur sagittal subtrochanteric diameter: 0.358951
+  Femur transverse subtrochanteric diameter: 0.750579
+  Femur sagittal midshaft diameter: 0.074984
+  Femur transverse midshaft diameter: -0.119069
+  Femur midshaft circumference: 0.464194
+
+Feature Order:
+Femur maximum heigth, Femur bicondylar length, Femur epicondylar breadth, Femur maximum head diameter, Femur sagittal subtrochanteric diameter, Femur transverse subtrochanteric diameter, Femur sagittal midshaft diameter, Femur transverse midshaft diameter, Femur midshaft circumference
+
+Classification Rule:
+Compute the score using your measurements:
+
+  Score = -158.890 + -0.450 × Femur maximum heigth + 0.504 × Femur bicondylar length + 0.185 × Femur epicondylar breadth + 1.167 × Femur maximum head diameter + 0.359 × Femur sagittal subtrochanteric diameter + 0.751 × Femur transverse subtrochanteric diameter + 0.075 × Femur sagittal midshaft diameter + -0.119 × Femur transverse midshaft diameter + 0.464 × Femur midshaft circumference
+
+Then apply the rule:
+  If Score > 0 → Classify as Male
+  If Score ≤ 0 → Classify as Female
+
+Example (replace values with your measurements):
+  Score = -158.890 + (-0.450 × [your Femur maximum heigth]) + (0.504 × [your Femur bicondylar length]) + (0.185 × [your Femur epicondylar breadth]) + (1.167 × [your Femur maximum head diameter]) + (0.359 × [your Femur sagittal subtrochanteric diameter]) + (0.751 × [your Femur transverse subtrochanteric diameter]) + (0.075 × [your Femur sagittal midshaft diameter]) + (-0.119 × [your Femur transverse midshaft diameter]) + (0.464 × [your Femur midshaft circumference])

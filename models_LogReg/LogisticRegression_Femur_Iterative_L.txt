@@ -1,0 +1,32 @@
+Logistic Regression Model for Femur (Iterative_L)
+
+Binary classification: 0 = Female, 1 = Male
+Samples used: 48
+
+Intercept: -121.879565
+
+Coefficients:
+  Femur maximum heigth: -0.461005
+  Femur bicondylar length: 0.482238
+  Femur epicondylar breadth: 0.254944
+  Femur maximum head diameter: 1.449659
+  Femur sagittal subtrochanteric diameter: 0.434213
+  Femur transverse subtrochanteric diameter: 0.680009
+  Femur sagittal midshaft diameter: 0.083690
+  Femur transverse midshaft diameter: -0.148728
+  Femur midshaft circumference: -0.020127
+
+Feature Order:
+Femur maximum heigth, Femur bicondylar length, Femur epicondylar breadth, Femur maximum head diameter, Femur sagittal subtrochanteric diameter, Femur transverse subtrochanteric diameter, Femur sagittal midshaft diameter, Femur transverse midshaft diameter, Femur midshaft circumference
+
+Classification Rule:
+Compute the score using your measurements:
+
+  Score = -121.880 + -0.461 × Femur maximum heigth + 0.482 × Femur bicondylar length + 0.255 × Femur epicondylar breadth + 1.450 × Femur maximum head diameter + 0.434 × Femur sagittal subtrochanteric diameter + 0.680 × Femur transverse subtrochanteric diameter + 0.084 × Femur sagittal midshaft diameter + -0.149 × Femur transverse midshaft diameter + -0.020 × Femur midshaft circumference
+
+Then apply the rule:
+  If Score > 0 → Classify as Male
+  If Score ≤ 0 → Classify as Female
+
+Example (replace values with your measurements):
+  Score = -121.880 + (-0.461 × [your Femur maximum heigth]) + (0.482 × [your Femur bicondylar length]) + (0.255 × [your Femur epicondylar breadth]) + (1.450 × [your Femur maximum head diameter]) + (0.434 × [your Femur sagittal subtrochanteric diameter]) + (0.680 × [your Femur transverse subtrochanteric diameter]) + (0.084 × [your Femur sagittal midshaft diameter]) + (-0.149 × [your Femur transverse midshaft diameter]) + (-0.020 × [your Femur midshaft circumference])

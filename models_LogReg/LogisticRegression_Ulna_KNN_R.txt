@@ -1,0 +1,28 @@
+Logistic Regression Model for Ulna (KNN_R)
+
+Binary classification: 0 = Female, 1 = Male
+Samples used: 48
+
+Intercept: -69.006525
+
+Coefficients:
+  Ulna maximum length: 0.158963
+  Ulna dorso-volar diameter: 0.238707
+  Ulna transverse diameter: -0.172824
+  Ulna physiological length: 0.071003
+  Ulna minimum circumference: 0.344094
+
+Feature Order:
+Ulna maximum length, Ulna dorso-volar diameter, Ulna transverse diameter, Ulna physiological length, Ulna minimum circumference
+
+Classification Rule:
+Compute the score using your measurements:
+
+  Score = -69.007 + 0.159 × Ulna maximum length + 0.239 × Ulna dorso-volar diameter + -0.173 × Ulna transverse diameter + 0.071 × Ulna physiological length + 0.344 × Ulna minimum circumference
+
+Then apply the rule:
+  If Score > 0 → Classify as Male
+  If Score ≤ 0 → Classify as Female
+
+Example (replace values with your measurements):
+  Score = -69.007 + (0.159 × [your Ulna maximum length]) + (0.239 × [your Ulna dorso-volar diameter]) + (-0.173 × [your Ulna transverse diameter]) + (0.071 × [your Ulna physiological length]) + (0.344 × [your Ulna minimum circumference])

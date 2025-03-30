@@ -1,0 +1,26 @@
+Logistic Regression Model for Clavicle (KNN_R)
+
+Binary classification: 0 = Female, 1 = Male
+Samples used: 48
+
+Intercept: -29.996450
+
+Coefficients:
+  Clavicle maximum length: 0.066231
+  Clavicle sagittal diameter at midshaft: 0.511115
+  Clavicle vertical diameter at midshaft: 1.495637
+
+Feature Order:
+Clavicle maximum length, Clavicle sagittal diameter at midshaft, Clavicle vertical diameter at midshaft
+
+Classification Rule:
+Compute the score using your measurements:
+
+  Score = -29.996 + 0.066 × Clavicle maximum length + 0.511 × Clavicle sagittal diameter at midshaft + 1.496 × Clavicle vertical diameter at midshaft
+
+Then apply the rule:
+  If Score > 0 → Classify as Male
+  If Score ≤ 0 → Classify as Female
+
+Example (replace values with your measurements):
+  Score = -29.996 + (0.066 × [your Clavicle maximum length]) + (0.511 × [your Clavicle sagittal diameter at midshaft]) + (1.496 × [your Clavicle vertical diameter at midshaft])

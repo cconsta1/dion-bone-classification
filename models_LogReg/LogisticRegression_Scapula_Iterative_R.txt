@@ -1,0 +1,25 @@
+Logistic Regression Model for Scapula (Iterative_R)
+
+Binary classification: 0 = Female, 1 = Male
+Samples used: 48
+
+Intercept: -57.971320
+
+Coefficients:
+  Scapula height: 0.284018
+  Scapula breadth: 0.149158
+
+Feature Order:
+Scapula height, Scapula breadth
+
+Classification Rule:
+Compute the score using your measurements:
+
+  Score = -57.971 + 0.284 × Scapula height + 0.149 × Scapula breadth
+
+Then apply the rule:
+  If Score > 0 → Classify as Male
+  If Score ≤ 0 → Classify as Female
+
+Example (replace values with your measurements):
+  Score = -57.971 + (0.284 × [your Scapula height]) + (0.149 × [your Scapula breadth])

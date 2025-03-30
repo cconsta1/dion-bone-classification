@@ -1,0 +1,28 @@
+Logistic Regression Model for Humerus (Iterative_L)
+
+Binary classification: 0 = Female, 1 = Male
+Samples used: 48
+
+Intercept: -86.483777
+
+Coefficients:
+  Humerus maximum length: 0.116066
+  Humerus epicondylar breadth: 0.285910
+  Humerus vertical diameter of head: 0.688678
+  Humerus maximum diameter at midshaft: 0.512075
+  Humerus minimum diameter at midshaft: -0.274621
+
+Feature Order:
+Humerus maximum length, Humerus epicondylar breadth, Humerus vertical diameter of head, Humerus maximum diameter at midshaft, Humerus minimum diameter at midshaft
+
+Classification Rule:
+Compute the score using your measurements:
+
+  Score = -86.484 + 0.116 × Humerus maximum length + 0.286 × Humerus epicondylar breadth + 0.689 × Humerus vertical diameter of head + 0.512 × Humerus maximum diameter at midshaft + -0.275 × Humerus minimum diameter at midshaft
+
+Then apply the rule:
+  If Score > 0 → Classify as Male
+  If Score ≤ 0 → Classify as Female
+
+Example (replace values with your measurements):
+  Score = -86.484 + (0.116 × [your Humerus maximum length]) + (0.286 × [your Humerus epicondylar breadth]) + (0.689 × [your Humerus vertical diameter of head]) + (0.512 × [your Humerus maximum diameter at midshaft]) + (-0.275 × [your Humerus minimum diameter at midshaft])

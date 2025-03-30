@@ -1,0 +1,25 @@
+Logistic Regression Model for Calcaneus (KNN_L)
+
+Binary classification: 0 = Female, 1 = Male
+Samples used: 48
+
+Intercept: -47.170863
+
+Coefficients:
+  Calcaneus maximum length: 0.178271
+  Calcaneus middle breadth: 0.805420
+
+Feature Order:
+Calcaneus maximum length, Calcaneus middle breadth
+
+Classification Rule:
+Compute the score using your measurements:
+
+  Score = -47.171 + 0.178 × Calcaneus maximum length + 0.805 × Calcaneus middle breadth
+
+Then apply the rule:
+  If Score > 0 → Classify as Male
+  If Score ≤ 0 → Classify as Female
+
+Example (replace values with your measurements):
+  Score = -47.171 + (0.178 × [your Calcaneus maximum length]) + (0.805 × [your Calcaneus middle breadth])
